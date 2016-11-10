@@ -1,0 +1,197 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px !important;
+  	font-family: 'Montserrat', sans-serif !important;
+  	background-color: #f8f8f8;
+}
+
+#container {
+	height: 360px;
+	width: 310px;
+	box-shadow: 0px 4px 30px #9b9b9b;
+	position: fixed;
+	top: 100px;
+	left: 50%;
+	margin-left: -155px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	z-index: 20;
+	overflow: hidden;
+}
+
+#question-box, #result-box {
+	position: absolute;
+	height: 360px;
+	width: 310px;
+	left: 0px;
+	top: 0px;
+}
+
+#result-box {
+	left: 310px;
+	text-align: center;
+}
+
+#qHeader {
+	height: 35px;
+	width: 100%;
+	background-color: #f03122;
+	border-radius: 5px 5px 0px 0px;
+	text-align: center;
+	padding-top: 15px;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+.group { 
+  margin-top: 85px;
+  position: relative;
+  margin-bottom: 40px;
+  margin-left: 25px;
+}
+
+.group input {
+  font-size:18px;
+  font-weight: 400;
+  padding-top:12px; 
+  display:block;
+  width: 260px;
+  border:none;
+  border-bottom: 1px solid #cbcbcb;
+}
+.group input:focus { 
+  outline:none; 
+}
+
+.group input:-webkit-autofill,
+.group input:-webkit-autofill:hover,
+.group input:-webkit-autofill:focus,
+.group input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.group label {
+  color: #6ab02a; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left: 0px;
+  top: 10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.group input:focus ~ label, .group input:valid ~ label {
+  top: -5px;
+  font-size: 11px;
+}
+
+#submitQ {
+	background-color: #fca92e;
+	height: 40px;
+	margin-left: 50px;
+	width: 210px;
+	color: #ffffff;
+	border-radius: 5px;
+	margin-top: 30px;
+	border: 0px;
+	cursor: pointer;
+}
+
+#submitQ:focus, #submitQ:active {
+	outline: 0px;
+}
+
+#invalidHashedVal {
+	position: absolute;
+	color: red;
+	top: 173px;
+    left: 60px;
+}
+
+.spinner {
+  width: 100px;
+  height: 50px;
+  z-index: 5050;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+.spinner .ball {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  animation: motion 3s ease-out infinite;
+}
+
+.spinner p {
+  color: #fff;
+  margin-top: 5px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  font-size: 10px;
+}
+
+@keyframes motion {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+
+  25% {
+    transform: translateX(-50px) scale(0.3);
+  }
+
+  50% {
+    transform: translateX(0) scale(1);
+  }
+
+  75% {
+    transform: translateX(50px) scale(0.3);
+  }
+
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+#backQ {
+    border: 0px;
+    top: 15px;
+    position: absolute;
+    left: 14px;
+    background-color: transparent;
+    height: 20px;
+    width: 21px;
+    background-image: url(https://s3-ap-southeast-1.amazonaws.com/doext/oo-left-arrow-grey.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+#backQ:focus{
+	outline: 0px;
+}
+
+#result {
+    font-size: 18px;
+    color: #6ab02a;
+    padding-top: 118px;
+    display: block;
+    width: 280px;
+    word-break: break-all;
+    padding-left: 15px;
+}

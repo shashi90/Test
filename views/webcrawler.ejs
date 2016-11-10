@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> Loktra Test | Web Crawler </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link href="/css/webcrawler.css" rel='stylesheet' type='text/css' />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/js/webcrawler.js"></script>
+</head>
+
+<body>
+<div id="ajax-popup-bg" style="position:fixed; top: 0px;width:100%; height:100%; z-index: 5040; background-color: rgba(0,0,0, 0.8); display: none"></div>
+	<div class="spinner" style="display: none">
+	<div class="ball"></div>
+	<p>SUBMITTING</p>
+</div>
+<div id="container">
+	<div id="question-box">
+		<div id="qHeader">Web Crawler</div>
+		<div class="group">
+            <input type="text" id="prodName" autocomplete="off" required/>
+            <label>Product Name</label>
+        </div>
+        <label id="invalidPrdName" style="display: none">Product Name shouldn't be empty!</label>
+        <div class="group">
+            <input type="text" id="pageNum" autocomplete="off" onkeypress='return (event.keyCode == 8 || (event.charCode >= 48 && event.charCode <= 57))' required />
+            <label>Page Number</label>
+        </div>
+        <button id="submitQ">SUBMIT</button>
+	</div>
+	<div id="result-box" style="display: none">
+		<div id="qHeader"><button id="backQ"></button> Result </div>
+		<div id="resultProducts">
+			<label id="emptyProductLabel" style="display: none">No Product</label>  
+		</div>
+		<label id="result"></label>
+	</div>
+</div>
+</body>
+</html>

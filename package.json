@@ -1,0 +1,14 @@
+{
+  "name": "Loktra",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+	"cheerio": "^0.22.0",
+    "express": "3.2.6",
+    "ejs": "*",
+    "request": "^2.76.0"
+  }
+}
